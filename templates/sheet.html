@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Tourist Bingo{% endblock %}
+
+{% block content %}
+<div class="bingo-header">
+  <h1>tourist bingo</h1>
+</div>
+
+<table class="table table-curved table-striped bingo" cellspacing="0">
+  <thead>
+    <tr>
+      <th>B</th>
+      <th>I</th>
+      <th>N</th>
+      <th>G</th>
+      <th>O</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for y in range(5) %}
+      <tr>
+        {% for x in range(5) %}
+        <td>{{ board.pop() }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
