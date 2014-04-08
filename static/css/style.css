@@ -147,3 +147,36 @@ body {
   box-sizing: border-box;
   padding: 16px 8px;
 }
+
+.nav {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+
+.nav .nav-page {
+  margin-left: 1em;
+  color: #888;
+}
+
+.nav .nav-page:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav .nav-page:after {
+  content: "\00BB";
+  margin-left: 4px;
+}
+
+.attribution {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  color: #888;
+}
+
+@media print {
+  .nav { display: none; }
+  .attribution { display: none; }
+}

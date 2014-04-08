@@ -22,7 +22,7 @@
     {% for y in range(5) %}
       <tr>
         {% for x in range(5) %}
-        <td>{{ board.pop() }}</td>
+        <td>{% if board %}{{ board.pop() }}{% endif %}</td>
         {% endfor %}
       </tr>
     {% endfor %}
