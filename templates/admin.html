@@ -7,20 +7,22 @@
   <h1>bingo admin</h1>
 </div>
 
-<form method="post">
-    <div class="form-group">
-        <textarea name="text" rows="2" class="form-control" placeholder="add target"></textarea>
+<form class="form-inline bingo-target-form" method="post">
+  <div class="input-group">
+    <input name="text" class="form-control input-lg" placeholder="add target" />
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn-default btn-lg">add <span class="glyphicon glyphicon-edit"></span></button>
     </div>
-    <button type="submit" class="btn btn-default">add</button>
+  </div>
 </form>
 
-<ul>
+<ul class="bingo-target-list">
     {% for target in targets %}
     <li class="bingo-target">
         <form method="post" action="{{ url_for('.delete_target') }}">
             <input type="hidden" name="target" value="{{ target }}">
             {{ target }}
-            <button type="submit" class="btn btn-default btn-sm">&cross;</button>
+            <button type="submit" class="btn btn-link">nope</button>
         </form>
     </li>
     {% endfor %}

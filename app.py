@@ -19,8 +19,9 @@ def board():
 @app.route('/admin/', methods=['GET', 'POST'])
 def admin():
     if request.method == 'POST':
-        text = request.form.get('text', '')
-        targets.add(text)
+        text = request.form.get('text')
+        if text:
+            targets.add(text)
         return redirect(url_for('.admin'))
 
     all_targets = targets.all()

@@ -176,6 +176,43 @@ body {
   color: #888;
 }
 
+.bingo-target-form {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.bingo-target-form .form-control {
+}
+
+.bingo-target-form button {
+}
+
+.bingo-target-list {
+  padding: 0;
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+.bingo-target {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+.bingo-target:nth-child(2n+1) {
+  background-color: #f8f8f8;
+}
+.bingo-target:first-child {
+  border-radius: 4px 4px 0px 0px;
+}
+.bingo-target:last-child {
+  border-radius: 0px 0px 4px 4px;
+}
+.bingo-target button {
+  float: right;
+  line-height: 1;
+  color: #888;
+  margin-top: -0.25em;
+}
+
 @media print {
   .nav { display: none; }
   .attribution { display: none; }
