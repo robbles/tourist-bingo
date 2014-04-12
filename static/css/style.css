@@ -213,6 +213,10 @@ body {
   margin-top: -0.25em;
 }
 
+.login-form {
+  margin-top: 6em;
+}
+
 @media print {
   .nav { display: none; }
   .attribution { display: none; }

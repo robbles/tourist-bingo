@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Tourist Bingo - Login{% endblock %}
+
+{% block content %}
+<div class="bingo-header">
+  <h1>login</h1>
+</div>
+
+<form class="form-inline login-form" method="post">
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label input-lg">Password:</label>
+        <div class="col-sm-10">
+            <div class="input-group">
+                <input id="password" type="password" name="password" class="form-control input-lg" placeholder="*******" autofocus required />
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default btn-lg">Login <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
