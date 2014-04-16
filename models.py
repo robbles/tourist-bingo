@@ -3,7 +3,7 @@ import random
 
 import settings
 
-redis = StrictRedis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
+redis = StrictRedis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB, password=settings.REDIS_PASS)
 
 class ShuffledSet(object):
     def __init__(self, key):
