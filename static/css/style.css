@@ -149,7 +149,7 @@ body {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   right: 1em;
   bottom: 1em;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
+  position: fixed;
   left: 1em;
   bottom: 1em;
   color: #888;
